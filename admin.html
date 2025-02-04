@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Адмін панель</title>
+    <link rel="stylesheet" href="adminstyless.css" />
+  </head>
+  <body>
+    <h1>Адмін панель</h1>
+    <form id="product-form">
+      <input
+        class="input"
+        type="text"
+        id="product-name"
+        placeholder="Назва товару"
+        required
+      />
+      <input type="text" id="product-size" placeholder="Розмір" required />
+      <!-- Додаємо поле для ціни -->
+      <input
+        type="number"
+        id="product-price"
+        placeholder="Ціна товару"
+        required
+      />
+
+      <!-- Блок для завантаження файлу -->
+      <div class="file-upload">
+        <input
+          type="file"
+          id="product-image"
+          accept="image/*"
+          required
+          class="file-input"
+        />
+        <label for="product-image" class="file-label">Виберіть файл</label>
+        <span id="file-name">Файл не вибрано</span>
+      </div>
+
+      <button type="submit">Додати товар</button>
+    </form>
+    <h2>Список товарів</h2>
+    <div id="product-list"></div>
+
+    <button onclick="window.location.href='index.html'">На головну</button>
+
+    <script src="admin.js"></script>
+  </body>
+</html>

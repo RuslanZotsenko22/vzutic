@@ -1,0 +1,164 @@
+/* Загальний стиль */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+/* Форма */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Кнопки */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Стилі для завантаження файлів */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.file-input {
+  display: none; /* Приховуємо стандартний інпут */
+}
+
+.file-label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.file-label:hover {
+  background-color: #45a049;
+}
+
+#file-name {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+.admin-product {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.admin-product-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.delete-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-flex; /* Робить кнопку компактною */
+  align-items: center;
+  gap: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: fit-content; /* Зменшує ширину під контент */
+}
+
+.delete-button:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+}
+/* Загальні стилі для всіх інпутів */
+.input,
+#product-price {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: 100%; /* Робить поле на всю ширину контейнера */
+  box-sizing: border-box; /* Підрахунок padding в ширині */
+}
+
+/* Стиль для кнопок (якщо потрібно) */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}

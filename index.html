@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин Взуття</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Vzutik</h1>
+      <p class="size-text">Обери свій розмір</p>
+      <div class="buttons">
+        <button class="all-sizes">Всі</button>
+        <button>32</button>
+        <button>33</button>
+        <button>34</button>
+        <button>35</button>
+        <button>36</button>
+        <button>37</button>
+        <button>38</button>
+        <button>39</button>
+        <button>40</button>
+        <button>41</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="products">
+        <div class="product-card" data-size="37">
+          <img src="shoe1.jpg" alt="Кросівки Nike" />
+          <h2>Кросівки Nike</h2>
+          <p>Розмір: 37</p>
+          <p class="price">Ціна: 1500 грн</p>
+          <!-- Додано поле ціни -->
+          <button>Додати в кошик</button>
+        </div>
+
+        <div class="product-card" data-size="39">
+          <img src="shoe2.jpg" alt="Кросівки Adidas" />
+          <h2>Кросівки Adidas</h2>
+          <p>Розмір: 39</p>
+          <p class="price">Ціна: 2000 грн</p>
+          <!-- Додано поле ціни -->
+          <button>Додати в кошик</button>
+        </div>
+
+        <div class="product-card" data-size="41">
+          <img src="shoe3.jpg" alt="Кросівки Puma" />
+          <h2>Кросівки Puma</h2>
+          <p>Розмір: 41</p>
+          <p class="price">Ціна: 1800 грн</p>
+          <!-- Додано поле ціни -->
+          <button>Додати в кошик</button>
+        </div>
+
+        <!-- Інші картки товарів також з цінами -->
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Vzutic</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Наш Telegram">
+          <img src="telegram.png" alt="Telegram" />
+        </a>
+        <a href="#" aria-label="Наш Instagram">
+          <img src="instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" aria-label="Наш Viber">
+          <img src="viber.png" alt="Viber" />
+        </a>
+      </div>
+    </footer>
+
+    <!-- Модальне вікно кошика -->
+    <div class="cart-modal hidden">
+      <div class="cart-content">
+        <span class="close-button" role="button" aria-label="Закрити вікно"
+          >&times;</span
+        >
+        <h2>Ваш кошик</h2>
+        <ul class="cart-items"></ul>
+        <button class="clear-cart">Очистити кошик</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
